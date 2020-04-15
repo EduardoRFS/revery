@@ -54,8 +54,10 @@
     "@glennsl/timber": "1.0.0"
   },
   "resolutions": {
-    "esy-cmake": "prometheansacrifice/esy-cmake#2a47392def755",
-    "@opam/cmdliner": "1.0.2"
+    "esy-cmake": "prometheansacrifice/esy-cmake#2dda31230b7bf6a7d0030d2a2a041cd1aea105fc",
+    "@opam/cmdliner": "1.0.2",
+    "reason-sdl2": "EduardoRFS/reason-sdl2#d7173796ae9b8692e3c632bf787c7e83b1d6caeb",
+    "esy-skia": "EduardoRFS/esy-skia#86051eaf35c085f8b73c54b0866ab3a464988888"
   },
   "devDependencies": {
     "ocaml": "~4.8",
