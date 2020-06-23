@@ -363,4 +363,17 @@ let init = app => {
   ();
 };
 
+Revery.Font.Discovery.callback_font_not_found :=
+  (
+    (~weight, ~width, ~italic, ~mono, family) => {
+      path: "/usr/share/fonts/liberation/LiberationSans-Regular.ttf",
+      postscriptName: "LiberationSans",
+      family: "Liberation Sans",
+      weight: Normal,
+      width: Normal,
+      italic: false,
+      monospace: false,
+    }
+  );
+
 App.start(init);
