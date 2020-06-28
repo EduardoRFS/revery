@@ -41,7 +41,7 @@ jobs:
             macos-latest-
       - name: Build dependencies
         if: steps.deps-cache-macos.outputs.cache-hit != 'true'
-        run: esy build-dependencies --release
+        run: esy build-dependencies --release --build-concurrency=2
       - name: Generate opam files
         run: |
           esy build dune build @check
@@ -208,7 +208,7 @@ jobs:
             ${{ matrix.os }}-
       - name: Build dependencies
         if: steps.deps-cache-win.outputs.cache-hit != 'true' && steps.deps-cache-non-win.outputs.cache-hit != 'true'
-        run: esy build-dependencies --release
+        run: esy build-dependencies --release --build-concurrency=2
       - name: Build
         run: esy build --release
       - name: Build test/dev dependencies
