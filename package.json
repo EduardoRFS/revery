@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/bryphe/revery#readme",
   "esy": {
+    "buildsInSource": true,
     "buildEnv": {
       "PKG_CONFIG_PATH": "/usr/lib64/pkgconfig:$PKG_CONFIG_PATH"
     },
